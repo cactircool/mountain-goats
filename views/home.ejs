@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecurity Home</title>
+
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <header>
+        <div class="links">
+            <a href="/about" class="about-link">about</a>
+            <a href="/members" class="members-link">members</a>
+            <a href="/resources" class="resources-link">resources</a>
+        </div>
+
+        <div class="creds">
+            <a href="/signup" class="signup">signup</a>
+            <a href="/login" class="login">login</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="heading"></div>
+            <div class="creds heading-creds">
+                <a href="/login" class="login">login</a>
+                <a href="/signup" class="signup">signup</a>
+            </div>
+        </div>
+    </main>
+
+    <script id="message-passer">
+        let address = '<%= locals.address || '' %>';
+    </script>
+    <script src="/js/home.js"></script>
+</body>
+</html>
